@@ -1,11 +1,17 @@
 import json
+import os
+
 from rest_framework.fields import CharField, IntegerField, BooleanField, ListField
 from rest_framework.serializers import Serializer
 
-with open('../resources/companies.json', 'r') as f:
+companies_file = os.environ.get("HIVERY_COMPANIES_JSON",
+                                os.path.join(os.path.dirname(__file__), './resources/companies.json'))
+people_file = os.environ.get("HIVERY_PEOPLE_JSON", os.path.join(os.path.dirname(__file__), './resources/people.json'))
+
+with open(companies_file, 'r') as f:
     companies = json.loads(f.read())
 
-with open('../resources/people.json', 'r') as f:
+with open(people_file, 'r') as f:
     people = json.loads(f.read())
 
 

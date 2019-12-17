@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, make_response, request, abort
-from core.models import companies, people, PersonSerializer, CommonFriendSerializer, get_person, FoodSerializer
+from hivery.models import companies, people, PersonSerializer, CommonFriendSerializer, get_person, FoodSerializer
 
 app = Flask(__name__)
 

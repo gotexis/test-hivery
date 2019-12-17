@@ -1,7 +1,7 @@
 from unittest import TestCase
 import unittest
-from core.models import CompanySerializer, PersonSerializer, companies, people
-from core.app import app
+from hivery.models import CompanySerializer, PersonSerializer, companies, people
+from hivery.app import app
 
 
 class RestTest(TestCase):
