@@ -11,3 +11,14 @@ Sets database resource file, for example:
 ## testing
 
 `python -m unittest tests`
+
+## installing
+
+`pip install git+https://github.com/gotexis/hivery.git`
+
+## running
+
+```python
+from hivery.app import app
+app.run()
+```
