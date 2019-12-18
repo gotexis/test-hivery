@@ -9,5 +9,6 @@ setup(
         'flask',
         'djangorestframework',
         'requests',
-    ]
+    ],
+    include_package_data=True
 )
